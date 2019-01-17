@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React JS</title>
+  <link rel="icon" href="../favicon.ico">
+</head>
+<body>
+
+<main>
+  <div id="app"></div>
+</main>
+
+<script src="./../assets/lib/babel/babel.min.js"></script>
+<script src="./../assets/lib/react/react.development.js" crossorigin></script>
+<script src="./../assets/lib/react/react-dom.development.js" crossorigin></script>
+<script>
+  'use strict';
+  const e = React.createElement;
+  class LikeButton extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {liked: false};
+    }
+    render() {
+      if (this.state.liked) {
+        return 'You liked this.';
+      }
+
+      return e(
+        'button',
+        {onClick: () => this.setState({liked: true})},
+        'Like'
+      );
+    }
+  }
+  const domContainer = document.querySelector('#app');
+  ReactDOM.render(e(LikeButton), domContainer);
+</script>
+</body>
+</html>
