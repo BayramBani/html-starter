@@ -2,19 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="../assets/lib/materialize/css/materialize.css">
+  <link rel="icon" href="favicon.ico">
   <title>Babel</title>
-  <link rel="icon" href="../favicon.ico">
 </head>
 <body>
 
-<div id="output"></div>
+<div class="container">
+  <div class="row">
+    <div class="col m12" id="output"></div>
+  </div>
+</div>
 
+<script src="../assets/lib/materialize/js/materialize.js"></script>
 <script src="../assets/lib/babel/babel.min.js"></script>
-
 <script type="text/babel">
   const getMessage = () => "Hello World";
   document.getElementById('output').innerHTML = getMessage();
 </script>
-
 </body>
 </html>
