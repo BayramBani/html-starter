@@ -1,6 +1,9 @@
-import App from "./App";
+/* CSS */
+import 'bootstrap/dist/css/bootstrap.css';
 
-ReactDOM.render(
-  <App/>,
-  document.getElementById('root')
-);
+/* JS */
+import 'bootstrap';
+
+// React App
+import App from "./react/App";
+App();

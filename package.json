@@ -2,32 +2,36 @@
   "name": "html-starter",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Bayram Bani <bayram.bani@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "jquery": "^3.3.1",
-    "materialize-css": "^1.0.0",
-    "vue": "^2.5.22"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.3.3",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
-    "webpack": "^4.29.4",
-    "webpack-cli": "^3.2.3"
-  },
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BayramBani/html-starter.git"
+  "author": "Bayram Bani",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.1.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-hot-middleware": "^2.24.3"
   },
-  "bugs": {
-    "url": "https://github.com/BayramBani/html-starter/issues"
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "bootstrap": "^4.2.1",
+    "datatables.net-bs4": "^1.10.19",
+    "datatables.net-dt": "^1.10.19",
+    "jquery": "^3.3.1",
+    "materialize-css": "^1.0.0",
+    "popper.js": "^1.14.6",
+    "react-router-dom": "^4.3.1"
   },
-  "homepage": "https://github.com/BayramBani/html-starter#readme",
   "description": ""
 }
